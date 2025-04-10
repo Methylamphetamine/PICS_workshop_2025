@@ -15,4 +15,11 @@ If you intend to use the content for research, please check the official impleme
 
 Under unforseeable event of `the_well` dataset used being unable to be downloaded, please use [this link](https://drive.google.com/drive/folders/1wycV4RiSIrtG7X_ZXgZ7Irq62Sv7YoWe?usp=sharing) and put the shared directory into your Google Drive's root directory.
 
-You can access your Google Drive in Colab too.
+You can access your Google Drive in Colab too. The following code snippet shows you how to mount your drive to a colab session and (optionally) move the dataset directory to the runtime. 
+
+```
+from google.colab import drive
+drive.mount('/content/drive')
+!cp -R /content/drive/MyDrive/the_well /content/
+
+```
