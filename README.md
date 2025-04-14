@@ -23,3 +23,6 @@ drive.mount('/content/drive')
 !cp -R /content/drive/MyDrive/the_well /content/
 
 ```
+## Normalization issue for `WellDataset`
+
+The latest release of of now (April 14th 2025) has some issue for data normalization. If a parsing error occurs, navigate to `the_well/datasets/turbulent_radiative_layer_2D`, and delete the line with only a single `:`.
